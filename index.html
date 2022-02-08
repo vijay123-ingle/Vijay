@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Source Serif 4', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img.jpeg');
+        height: 3000px;
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 24px;
+        /* border: 3px solid red; */
+        top: 20px;
+    }
+
+    .left img {
+        width: 50px;
+        line-height: 0px;
+        margin: 10px 20;
+        padding: 5px 20px;
+
+    }
+
+    .centre {
+        display: block;
+        margin: 20PX auto;
+        width: 42%;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 24px;
+        /* border: 2px solid blue; */
+        top: 40px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .navbar li a {
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(224, 167, 93);
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 3px;
+        padding: 5px 8px;
+        background-color: black;
+        border-color: white;
+        color: white;
+        border-radius: 5px;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        font-family: 'Source Serif 4', sans-serif;
+    }
+
+    .btn :hover {
+        text-decoration: underline;
+        background-color: rgb(216, 176, 102);
+        color: rgb(226, 183, 103);
+
+    }
+
+    .container {
+        font-family: 'Source Serif 4', sans-serif;
+        border: 3px solid white;
+        padding: 30px 30px;
+        display: block;
+        width: 33%;
+        margin: 150px 940px;
+        border-radius: 15px;
+    }
+    .formgroup input
+    {
+        
+        margin: 3px 5px;
+        padding: 3px 5px;
+        display: block;
+        }
+</style>
+
+<body>
+    <header class="head">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>V Fitness Club</div>
+        </div>
+
+        <!-- centre box is for navigation  -->
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness tips</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Join the V Fitness Club in Latur</h1>
+    <form action="noaction.php">
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your name">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Gender">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Age">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your phone no">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Email-id">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Address">
+    </div>
+    <button class="btn">Reset</button>
+    <button class="btn">Submit</button>
+</form>
+    </div>
+</body>
+
+</html>
